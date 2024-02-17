@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    position: relative;
+}
+#icon{
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    font-size: 25px;
+    padding: 10px 15px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    gap: 20px;
+}
+#icon i:nth-child(2){
+    display: none;
+}
+#menubar{
+    position: absolute;
+    height: 60vh;
+    width: 30vw;
+    /* background-color: red; */
+    right: 15%;
+    top: 15%;
+    display: flex;
+    /* padding: 3vh 8vw; */
+    justify-content: center;
+    /* align-items:center ; */
+    gap: 5vw;
+    /* margin-top: 5vw; */
+    visibility: hidden;
+
+}
+.rightmenu{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-top: 5vw;
+    z-index: 2;
+    cursor: pointer;
+
+
+}
+.rightmenu h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.leftmenu{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-top: 5vw;
+    z-index: 2;
+    cursor: pointer;
+
+
+}
+.leftmenu h3{
+    font-weight: 700;
+    font-size: 20px;
+}
+#circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 1;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+}
